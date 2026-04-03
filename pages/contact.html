@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – FreshCart Market</title>
+  <meta name="description" content="Get in touch with FreshCart Market. We'd love to hear from you." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">Fresh<span>Cart Market</span></a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="cities.html">Cities &amp; Stores</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>Contact Us</h1>
+    <p>Have a question, feedback, or want to partner with us? We'd love to hear from you.</p>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="content-section">
+    <div class="content-wrap">
+      <div class="contact-grid">
+
+        <!-- LEFT: INFO -->
+        <div class="contact-info">
+          <div class="section-label">Get In Touch</div>
+          <h2>We're here to help</h2>
+          <p>Whether you have a question about your order, want to become a delivery driver, or just want to say hi — reach out and we'll get back to you as soon as possible.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📧</div>
+            <div class="contact-detail__text">
+              <strong>Email</strong><br />
+              <a href="mailto:freshcartcanada@outlook.com">freshcartcanada@outlook.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📸</div>
+            <div class="contact-detail__text">
+              <strong>Instagram</strong><br />
+              <a href="https://instagram.com/freshcartcanada" target="_blank">@freshcartcanada</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">🌐</div>
+            <div class="contact-detail__text">
+              <strong>Website</strong><br />
+              <a href="https://freshcartcanada.ca">freshcartcanada.ca</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">🏙️</div>
+            <div class="contact-detail__text">
+              <strong>Service Areas</strong><br />
+              Toronto · Oshawa · Barrie, Ontario
+            </div>
+          </div>
+
+          <div style="margin-top:2rem; background:var(--off-white); border-radius:var(--radius); padding:1.5rem;">
+            <h4 style="margin-bottom:0.8rem; font-size:1rem;">Frequently Asked</h4>
+            <div style="display:flex; flex-direction:column; gap:0.8rem;">
+              <div>
+                <strong style="font-size:0.9rem;">How much does delivery cost?</strong>
+                <p style="font-size:0.85rem; color:var(--gray); margin:0.2rem 0 0;">$5 flat fee, free over $50. Plus a $2.99 service fee.</p>
+              </div>
+              <div>
+                <strong style="font-size:0.9rem;">Is my first delivery really free?</strong>
+                <p style="font-size:0.85rem; color:var(--gray); margin:0.2rem 0 0;">Yes! First order delivery is always free — no code needed.</p>
+              </div>
+              <div>
+                <strong style="font-size:0.9rem;">How do I become a driver?</strong>
+                <p style="font-size:0.85rem; color:var(--gray); margin:0.2rem 0 0;">Fill out the form and select "Become a Driver" as your subject.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div>
+          <form id="contactForm" style="background:var(--off-white); border-radius:var(--radius); padding:2rem;">
+            <h3 style="font-size:1.3rem; margin-bottom:1.5rem; color:var(--dark);">Send us a message</h3>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="order">Order Support</option>
+                <option value="driver">Become a Driver</option>
+                <option value="business">Business / Partnership</option>
+                <option value="city">Request a City</option>
+                <option value="feedback">General Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="city">Your City</label>
+              <select id="city" name="city">
+                <option value="" disabled selected>Select your city</option>
+                <option value="toronto">Toronto</option>
+                <option value="oshawa">Oshawa</option>
+                <option value="barrie">Barrie</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="width:100%; font-size:1rem;">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DRIVER CTA -->
+  <section class="content-section alt">
+    <div class="content-wrap" style="text-align:center;">
+      <div class="section-label">Work With Us</div>
+      <h2 class="section-title">Become a FreshCart Market Driver</h2>
+      <p style="color:var(--gray); max-width:600px; margin:0 auto 2rem; line-height:1.7;">Earn money on your own schedule. Deliver groceries in Toronto, Oshawa, or Barrie and get paid per delivery. No experience needed — just a vehicle and a great attitude.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <div style="background:var(--white); border-radius:12px; padding:1.5rem 2rem; min-width:180px; box-shadow:var(--shadow);">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">💰</div>
+          <strong>Paid Per Delivery</strong>
+          <p style="font-size:0.85rem; color:var(--gray); margin-top:0.3rem;">Earn every time you deliver</p>
+        </div>
+        <div style="background:var(--white); border-radius:12px; padding:1.5rem 2rem; min-width:180px; box-shadow:var(--shadow);">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">🕐</div>
+          <strong>Flexible Hours</strong>
+          <p style="font-size:0.85rem; color:var(--gray); margin-top:0.3rem;">Work when you want</p>
+        </div>
+        <div style="background:var(--white); border-radius:12px; padding:1.5rem 2rem; min-width:180px; box-shadow:var(--shadow);">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">📱</div>
+          <strong>App-Based</strong>
+          <p style="font-size:0.85rem; color:var(--gray); margin-top:0.3rem;">Manage everything in the app</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="section-inner">
+      <h2>Ready to order?</h2>
+      <p>Download FreshCart Market and get your first delivery FREE.</p>
+      <div class="cta-banner__actions">
+        <a href="#" class="btn btn--yellow">Download on iOS</a>
+        <a href="#" class="btn btn--yellow">Get it on Android</a>
+      </div>
+      <p class="cta-banner__insta">Follow us: <a href="https://instagram.com/freshcartcanada" target="_blank">@freshcartcanada</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">Fresh<span>Cart Market</span></a>
+        <p>Grocery delivery for Toronto,<br/>Oshawa &amp; Barrie.</p>
+        <a href="https://instagram.com/freshcartcanada" target="_blank" class="footer__insta">📸 @freshcartcanada</a>
+      </div>
+      <div class="footer__links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="cities.html">Cities &amp; Stores</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 FreshCart Market. All rights reserved. | <a href="https://freshcartcanada.ca">freshcartcanada.ca</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
