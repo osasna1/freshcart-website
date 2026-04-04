@@ -53,24 +53,6 @@ revealElements.forEach(el => {
   revealObserver.observe(el);
 });
 
-// ----- Contact form handler -----
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = contactForm.querySelector('button[type="submit"]');
-    btn.textContent = '✅ Message Sent!';
-    btn.style.background = '#43A047';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
-      btn.style.background = '';
-      btn.disabled = false;
-      contactForm.reset();
-    }, 3000);
-  });
-}
-
 // ----- Active nav link highlight -----
 const currentPage = window.location.pathname.split('/').pop();
 document.querySelectorAll('.nav__links a').forEach(link => {
