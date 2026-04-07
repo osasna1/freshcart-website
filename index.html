@@ -9,6 +9,127 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <style>
+    .fresh-pick {
+      background: #fff;
+      padding: 80px 24px;
+    }
+    .fresh-pick__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+    .fresh-pick__text {
+      flex: 1;
+      min-width: 280px;
+    }
+    .fresh-pick__label {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2E7D32;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .fresh-pick__title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: #111;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .fresh-pick__title span {
+      color: #2E7D32;
+    }
+    .fresh-pick__desc {
+      font-size: 1.05rem;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 440px;
+    }
+    .fresh-pick__badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .fresh-pick__badge {
+      background: #f5f5f5;
+      border-radius: 100px;
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #333;
+    }
+    .fresh-pick__image {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .fresh-pick__image-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      padding: 20px;
+    }
+    .fresh-pick__image-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+      border-radius: 32px;
+      z-index: 0;
+    }
+    .fresh-pick__image-wrap img {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.12));
+      transition: transform 0.4s ease;
+    }
+    .fresh-pick__image-wrap:hover img {
+      transform: translateY(-6px) scale(1.02);
+    }
+    .fresh-pick__tag {
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #2E7D32;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 100px;
+      white-space: nowrap;
+      z-index: 2;
+      box-shadow: 0 4px 20px rgba(46,125,50,0.35);
+    }
+    @media (max-width: 768px) {
+      .fresh-pick__inner {
+        flex-direction: column-reverse;
+        gap: 48px;
+        text-align: center;
+      }
+      .fresh-pick__badges {
+        justify-content: center;
+      }
+      .fresh-pick__desc {
+        margin: 0 auto 32px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -78,6 +199,31 @@
               <div class="track-bar"><div class="track-fill"></div></div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRESH PICK SECTION -->
+  <section class="fresh-pick">
+    <div class="fresh-pick__inner">
+      <div class="fresh-pick__text">
+        <div class="fresh-pick__label">🥬 Farm Fresh Quality</div>
+        <h2 class="fresh-pick__title">Everything you need,<br/><span>delivered fresh.</span></h2>
+        <p class="fresh-pick__desc">From crisp vegetables and ripe fruits to dairy, bread, and pantry staples — FreshCart Market brings the best of your local stores right to your door.</p>
+        <div class="fresh-pick__badges">
+          <div class="fresh-pick__badge">🥛 Dairy & Eggs</div>
+          <div class="fresh-pick__badge">🍎 Fresh Produce</div>
+          <div class="fresh-pick__badge">🍞 Bakery</div>
+          <div class="fresh-pick__badge">🥩 Meat & Seafood</div>
+          <div class="fresh-pick__badge">🧴 Household</div>
+        </div>
+      </div>
+      <div class="fresh-pick__image">
+        <div class="fresh-pick__image-wrap">
+          <div class="fresh-pick__image-bg"></div>
+          <img src="images/grocery-basket.png" alt="Fresh grocery basket" />
+          <div class="fresh-pick__tag">🚗 Delivered in under 30 min</div>
         </div>
       </div>
     </div>
