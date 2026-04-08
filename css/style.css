@@ -103,9 +103,9 @@ img { max-width: 100%; }
   font-family: 'Syne', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--dark);
+  color: var(--green);
 }
-.nav__logo span { color: var(--green); }
+.nav__logo span { color: var(--yellow); }
 .nav__links {
   display: flex;
   align-items: center;
